@@ -57,13 +57,13 @@ weights = {
 }
 
 capacities = {
-    'Li': 3861, 'C': 372, 'Mg': 195, 'Al': 195, 'Si': 3579, 'P': 2596, 'S': 1672, 'Zn': 410, 'Ga': 769, 'Ge': 1384,
-    'As': 1073, 'Se': 678, 'Br': 335, 'Ag': 248, 'Cd': 238, 'In': 1012, 'Sn': 993.4, 'Sb': 660, 'Te': 420, 'I': 211,
+    'Li': 3861, 'C': 372, 'Mg': 195, 'Al': 993, 'Si': 3579, 'P': 2596, 'S': 1675, 'Zn': 410, 'Ga': 769, 'Ge': 1384,
+    'As': 1073, 'Se': 678, 'Br': 335, 'Ag': 248, 'Cd': 238, 'In': 1012, 'Sn': 960, 'Sb': 660, 'Te': 420, 'I': 211,
     'Au': 510, 'Pb': 550, 'Bi': 385
 }
 
 while True:
-    raw_input = input("Enter a molecular formula: ")
+    raw_input = input("Enter a formula: ")
     parsed_formula = parse_formula(raw_input)
     molecular_weight = calculate_molecular_weight(parsed_formula, weights)
     theoretical_capacity = calculate_theoretical_capacity(parsed_formula, weights, capacities)
