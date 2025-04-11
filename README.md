@@ -4,7 +4,7 @@ This is a simple command-line program for calculating the theoretical capacities
 
 ## Using this Calculator
 
-- Simply run the program and enter the formula of a chemical compound (e.g. Al2O3, Fe2(SO4)3).
-- The program can handle parentheses "()" but not square brackets "[]".
-- Non-stoichiometric compounds (e.g. Fe0.9S) are not handled. 
+- Simply run the program and enter the formula of a chemical compound (e.g. `Al2O3`, `Fe2(SO4)3`).
+- Non-stoichiometric compounds (e.g. `Fe0.9S`) are not handled. 
+- Hydrates (e.g. `CoCl2·6H2O`) are not handled correctly. Instead, rewrite in the format `CoCl2(H2O)6`.
 
