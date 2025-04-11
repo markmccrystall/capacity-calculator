@@ -1,6 +1,9 @@
 import re
 
 def parse_formula(formula):
+    # Convert brackets [] to parentheses () for uniform handling
+    formula = formula.replace('[', '(').replace(']', ')')
+    
     # Handle nested parentheses
     while True:
         # Find the innermost parentheses and expand them
